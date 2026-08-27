@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D'View Royal Resort - Comfort, Fun & Luxury</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://js.paystack.co/v1/inline.js"></script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -44,7 +45,7 @@
       </p>
       <div class="grid">
         <!-- SINGLE ROOM - GALLERY: 1 VIDEO + 2 PICTURES -->
-        <div class="card price-card gallery-card">
+        <div class="card price-card gallery-card" data-room="Single Room">
           <div class="slider">
             <div class="slides">
               <video autoplay muted loop playsinline>
@@ -70,17 +71,32 @@
               <p><b>Room Size:</b> 15sqm</p>
               <p><b>Features:</b> 24hrs Light, 24hrs Water, En-suite*, TV</p>
             </div>
-            <a
-              href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%20I%20want%20to%20book%20a%20Single%20Room%20for%20₦40,000"
-              target="_blank"
-              class="btn"
-              >Book Now</a
-            >
+            <div class="service-tier" data-service="standard">
+              <div
+                class="room-option"
+                data-category="standard"
+                data-price="40000">
+                <p><b>Standard:</b> ₦40,000</p>
+              </div>
+            </div>
+            <div class="booking-buttons">
+              <button class="btn pay-now-btn" onclick="openBookingModal(this)">
+                Book Direct
+              </button>
+              <a
+                href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%20I%20want%20to%20book%20a%20Single%20Room%20for%20₦40,000"
+                target="_blank"
+                class="btn whatsapp-btn"
+                >Book Now</a
+              >
+            </div>
           </div>
         </div>
 
         <!-- 1-BEDROOM APARTMENTS - GALLERY: 1 VIDEO + 2 PICTURES -->
-        <div class="card price-card featured gallery-card">
+        <div
+          class="card price-card featured gallery-card"
+          data-room="1-Bedroom Apartment">
           <div class="slider">
             <div class="slides">
               <video autoplay muted loop playsinline>
@@ -95,53 +111,94 @@
           <div class="card-body">
             <h3>1-Bedroom Apartment</h3>
             <p class="card-desc">Living Room + Kitchen + Bedroom</p>
-            <div class="service-tier">
+            <div class="service-tier" data-service="standard">
               <h4>STANDARD SERVICE</h4>
               <p class="tier-desc">24hrs Light, Water, AC for sleep</p>
               <div class="room-options">
-                <p>
-                  <b>Standard:</b> ₦60,000 <br />
-                  <span>Queen Bed 5x6, 25sqm</span>
-                </p>
-                <p>
-                  <b>Premium:</b> ₦75,000 <br />
-                  <span>King Bed 6x6, 30sqm + Balcony</span>
-                </p>
-                <p>
-                  <b>Ult. Premium:</b> ₦80,000 <br />
-                  <span>King Bed 6x6, 35sqm + Balcony + Sofa</span>
-                </p>
+                <div
+                  class="room-option"
+                  data-category="standard"
+                  data-price="60000">
+                  <p>
+                    <b>Standard:</b> ₦60,000 <br /><span
+                      >Queen Bed 5x6, 25sqm</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="room-option"
+                  data-category="premium"
+                  data-price="75000">
+                  <p>
+                    <b>Premium:</b> ₦75,000 <br /><span
+                      >King Bed 6x6, 30sqm + Balcony</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="room-option"
+                  data-category="ultimate"
+                  data-price="80000">
+                  <p>
+                    <b>Ult. Premium:</b> ₦80,000 <br /><span
+                      >King Bed 6x6, 35sqm + Balcony + Sofa</span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="service-tier">
+            <div class="service-tier" data-service="advanced">
               <h4>ADVANCED SERVICE</h4>
               <p class="tier-desc">Breakfast for 2, WiFi, 24hrs AC</p>
               <div class="room-options">
-                <p>
-                  <b>Standard:</b> ₦75,000 <br />
-                  <span>Queen Bed 5x6, 25sqm</span>
-                </p>
-                <p>
-                  <b>Premium:</b> ₦85,000 <br />
-                  <span>King Bed 6x6, 30sqm + Balcony</span>
-                </p>
-                <p>
-                  <b>Ult. Premium:</b> ₦95,000 <br />
-                  <span>King Bed 6x6, 35sqm + Balcony + Sofa</span>
-                </p>
+                <div
+                  class="room-option"
+                  data-category="standard"
+                  data-price="75000">
+                  <p>
+                    <b>Standard:</b> ₦75,000 <br /><span
+                      >Queen Bed 5x6, 25sqm</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="room-option"
+                  data-category="premium"
+                  data-price="85000">
+                  <p>
+                    <b>Premium:</b> ₦85,000 <br /><span
+                      >King Bed 6x6, 30sqm + Balcony</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="room-option"
+                  data-category="ultimate"
+                  data-price="95000">
+                  <p>
+                    <b>Ult. Premium:</b> ₦95,000 <br /><span
+                      >King Bed 6x6, 35sqm + Balcony + Sofa</span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
-            <a
-              href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%20I%20want%20to%20book%201-Bedroom%20Apartment"
-              target="_blank"
-              class="btn"
-              >Book on WhatsApp</a
-            >
+            <div class="booking-buttons">
+              <button class="btn pay-now-btn" onclick="openBookingModal(this)">
+                Book Direct
+              </button>
+              <a
+                href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%20I%20want%20to%20book%201-Bedroom%20Apartment"
+                target="_blank"
+                class="btn whatsapp-btn"
+                >Book on WhatsApp</a
+              >
+            </div>
           </div>
         </div>
 
         <!-- 2-BEDROOM / PENTHOUSE - VIDEO ONLY -->
-        <div class="card price-card vip">
+        <div class="card price-card vip" data-room="2-Bedroom Penthouse">
           <video autoplay muted loop playsinline class="card-media">
             <source src="images/penthouse.mp4" type="video/mp4" />
           </video>
@@ -154,26 +211,39 @@
               <p><b>Size:</b> 60sqm</p>
               <p><b>For:</b> Up to 4-5 Guests</p>
             </div>
-            <div class="service-tier">
+            <div class="service-tier" data-service="standard">
               <h4>STANDARD SERVICE</h4>
               <p class="tier-desc">24hrs Light, Water, AC for sleep</p>
-              <ul>
-                <li><b>₦120,000 /night</b></li>
-              </ul>
+              <div
+                class="room-option"
+                data-category="penthouse"
+                data-price="120000">
+                <p><b>₦120,000 /night</b></p>
+              </div>
             </div>
-            <div class="service-tier">
+            <div class="service-tier" data-service="advanced">
               <h4>ADVANCED SERVICE</h4>
               <p class="tier-desc">Breakfast for 4, WiFi, 24hrs AC</p>
-              <ul>
-                <li><b>₦150,000 /night</b></li>
-              </ul>
+              <div
+                class="room-option"
+                data-category="penthouse"
+                data-price="150000">
+                <p><b>₦150,000 /night</b></p>
+              </div>
             </div>
-            <a
-              href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%20I%20want%20to%20book%202-Bedroom%20Penthouse"
-              target="_blank"
-              class="btn vip-btn"
-              >Book Penthouse</a
-            >
+            <div class="booking-buttons">
+              <button
+                class="btn pay-now-btn vip-btn"
+                onclick="openBookingModal(this)">
+                Book Direct
+              </button>
+              <a
+                href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%20I%20want%20to%20book%202-Bedroom%20Penthouse"
+                target="_blank"
+                class="btn vip-btn whatsapp-btn"
+                >Book Penthouse</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -398,6 +468,64 @@
     <footer>
       <p>&copy; 2026 D'View Royal Resort. All Rights Reserved.</p>
     </footer>
+
+    <!-- BOOKING MODAL - NEW UPDATE -->
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="booking-step active" id="step-1">
+          <h2>Step 1: Pick Room Category</h2>
+          <div class="category-grid" id="category-grid"></div>
+        </div>
+        <div class="booking-step" id="step-2">
+          <h2>Step 2: Pick Service Type</h2>
+          <div class="category-grid">
+            <div class="category-card" onclick="selectService('standard')">
+              Standard Service<br /><small>24hrs Light, Water, AC</small>
+            </div>
+            <div class="category-card" onclick="selectService('advanced')">
+              Advanced Service<br /><small>Breakfast, WiFi, 24hrs AC</small>
+            </div>
+          </div>
+          <button class="btn-back" onclick="goToStep(1)">Back</button>
+        </div>
+        <div class="booking-step" id="step-3">
+          <h2>Step 3: Pick Date</h2>
+          <label>Check-in:</label
+          ><input type="date" id="checkin-date" required /><label
+            >Check-out:</label
+          ><input type="date" id="checkout-date" required /><button
+            class="btn-back"
+            onclick="goToStep(2)">
+            Back</button
+          ><button class="btn" onclick="goToStep(4)">
+            Continue to Payment
+          </button>
+        </div>
+        <div class="booking-step" id="step-4">
+          <h2>Step 4: Your Details & Payment</h2>
+          <label>Full Name:</label
+          ><input
+            type="text"
+            id="guest-name"
+            placeholder="John Doe"
+            required /><label>Email Address:</label
+          ><input
+            type="email"
+            id="guest-email"
+            placeholder="john@email.com"
+            required /><label>Phone Number:</label
+          ><input
+            type="tel"
+            id="guest-phone"
+            placeholder="08012345678"
+            required />
+          <p id="booking-summary"></p>
+          <button class="btn" id="paystack-btn">Pay Now with Paystack</button
+          ><button class="btn-back" onclick="goToStep(3)">Back</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
