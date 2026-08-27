@@ -110,7 +110,7 @@ document.getElementById("paystack-btn").onclick = function () {
   }
 
   let handler = PaystackPop.setup({
-    key: "pk_test_REPLACE_WITH_YOUR_KEY", // <-- PUT YOUR PAYSTACK PUBLIC KEY HERE
+    key: "pk_test_e568a58a7470e1fcabdf16fd4e24d28986d793c9", // <-- PUT YOUR PAYSTACK PUBLIC KEY HERE
     email: email,
     amount: bookingData.price * 100, // Paystack uses kobo
     currency: "NGN",

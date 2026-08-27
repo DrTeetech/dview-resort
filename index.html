@@ -502,27 +502,46 @@
             Continue to Payment
           </button>
         </div>
-        <div class="booking-step" id="step-4">
-          <h2>Step 4: Your Details & Payment</h2>
-          <label>Full Name:</label
-          ><input
-            type="text"
-            id="guest-name"
-            placeholder="John Doe"
-            required /><label>Email Address:</label
-          ><input
-            type="email"
-            id="guest-email"
-            placeholder="john@email.com"
-            required /><label>Phone Number:</label
-          ><input
-            type="tel"
-            id="guest-phone"
-            placeholder="08012345678"
-            required />
-          <p id="booking-summary"></p>
-          <button class="btn" id="paystack-btn">Pay Now with Paystack</button
-          ><button class="btn-back" onclick="goToStep(3)">Back</button>
+        <!-- STEP 4: PAYMENT DETAILS -->
+        <div id="step4" class="booking-card">
+          <h2>Step 4: Complete Your Booking</h2>
+
+          <div class="form-group">
+            <label>👤 Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              placeholder="Oluwatobi Olatoye"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label>📧 Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="you@email.com"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label>📱 Phone Number</label>
+            <input type="tel" id="phone" placeholder="0801 234 5678" required />
+          </div>
+
+          <div class="summary-box">
+            <p>
+              <b>Room:</b> <span id="summaryRoom">1-Bedroom Apartment</span>
+            </p>
+            <p><b>Category:</b> <span id="summaryCategory">PREMIUM</span></p>
+            <p class="price">
+              <b>Price:</b> <span id="summaryPrice">₦75,000</span> /night
+            </p>
+          </div>
+
+          <button class="pay-btn" onclick="payWithPaystack()">
+            Pay Now with Paystack
+          </button>
         </div>
       </div>
     </div>

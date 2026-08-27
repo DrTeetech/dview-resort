@@ -570,3 +570,68 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* D'VIEW RESORT BOOKING CARD */
+.booking-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 40px auto; /* added margin top/bottom */
+  font-family: "Poppins", sans-serif;
+}
+
+.booking-card h2 {
+  color: #8b4513; /* Resort gold/brown */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box; /* important so padding doesn't break width */
+}
+
+.summary-box {
+  background: #fff8f0;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border-left: 4px solid #d4af37; /* Gold accent */
+}
+
+.price {
+  color: #8b4513;
+  font-size: 18px;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #d4af37, #8b4513);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pay-btn:hover {
+  opacity: 0.9;
+}
