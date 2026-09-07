@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - D'View Royal Resort</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">D'View Royal Resort</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="events" class="section alt-bg">
+      <h2>Host Your Event With Us</h2>
+      <p class="section-subtitle">
+        Perfect venue for your special moments + Giving back to community
+      </p>
+      <div class="grid">
+        <div class="card upcoming-card">
+          <div class="coming-soon-badge">COMING SOON</div>
+          <video autoplay muted loop playsinline class="card-media">
+            <source src="images/construction.mp4" type="video/mp4" />
+          </video>
+          <h3>Grand Event Center</h3>
+          <p class="card-desc">
+            State-of-the-art event hall for Weddings, Burials, Conferences.
+            Under Construction.
+          </p>
+          <button class="btn" onclick="bookEvent('Grand Event Center')">
+            Get Notified
+          </button>
+        </div>
+        <div class="card foundation-card">
+          <video autoplay muted loop playsinline class="card-media">
+            <source src="images/foundation.mp4" type="video/mp4" />
+          </video>
+          <h3>OLU Foundation & Community Service</h3>
+          <p class="card-desc">
+            Giving back is part of who we are. Through the
+            <b>OLU Foundation</b> run by our Chairman, we support the community.
+          </p>
+          <ul class="foundation-list">
+            <li>
+              📚 <b>Education Support:</b> Free books and school materials
+            </li>
+            <li>♿ <b>Disability Support:</b> Wheelchairs and aids</li>
+            <li>🤝 <b>Community Outreach:</b> Helping the needy</li>
+          </ul>
+          <button
+            class="btn foundation-btn"
+            onclick="bookEvent('OLU Foundation Donation')">
+            Partner / Donate
+          </button>
+        </div>
+        <div class="card">
+          <video autoplay muted loop playsinline class="card-media">
+            <source src="images/wedding.mp4" type="video/mp4" />
+          </video>
+          <h3>Weddings & Indoor Celebrations</h3>
+          <p class="card-desc">
+            Elegant indoor halls for Weddings, Birthdays, Anniversaries and
+            Corporate Events.
+          </p>
+          <button class="btn" onclick="bookEvent('Wedding Hall')">
+            Book Hall
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 D'View Royal Resort. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
