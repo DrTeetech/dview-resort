@@ -3,83 +3,463 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>D'View Royal Resort - Comfort, Fun & Luxury</title>
+
+    <title>D'View Royal Resort | Comfort, Luxury & Memorable Experiences</title>
+
+    <meta
+      name="description"
+      content="Welcome to D'View Royal Resort — comfortable accommodation, dining, recreation, events and memorable experiences." />
+    <meta name="theme-color" content="#12372a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- NAVBAR -->
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">D'View Royal Resort</h1>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">D</span>
+          <span>
+            <strong>D'View</strong>
+            <small>Royal Resort</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="site-nav"
+          aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html">Events</a>
+          <a href="tours.html">Tours</a>
+          <a href="contact.html">Contact</a>
+          <a href="rooms.html" class="nav-cta">Book Your Stay</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- HERO SECTION WITH VIDEO -->
-    <section id="home" class="hero">
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="video.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h2>Welcome to D'View Royal Resort</h2>
-        <p>...It Matters Where You Stay.</p>
-        <a href="rooms.html" class="btn">Book Your Stay</a>
-      </div>
-    </section>
+    <!-- ================= HERO ================= -->
+    <main>
+      <section class="hero">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="images/resort-poster.jpg"
+          aria-hidden="true">
+          <source src="video.mp4" type="video/mp4" />
+        </video>
 
-    <!-- AMENITIES ROW: POOL, GAME HOUSE, RESTAURANT -->
-    <section class="section">
-      <h2>Our Amenities</h2>
-      <div class="amenities-row">
-        <div class="card amenity-card pool-event-card">
-          <video autoplay muted loop playsinline class="card-media">
-            <source src="images/VID-20260122-WA0000.mp4" type="video/mp4" />
-          </video>
-          <div class="card-body">
-            <h3>Swimming Pool & Poolside Events</h3>
-            <p class="card-desc">
-              Relax and swim in our clean, family-friendly pool.
-            </p>
-            <button class="btn-small" onclick="bookEvent('Poolside Event')">
-              Book Pool for Event
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <p class="eyebrow">WELCOME TO D'VIEW ROYAL RESORT</p>
+
+          <h1>
+            Comfort, elegance
+            <span>and unforgettable stays.</span>
+          </h1>
+
+          <p class="hero-text">
+            Discover a welcoming destination designed for relaxation,
+            celebrations, business stays and memorable experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="rooms.html" class="btn btn-primary"> Explore Rooms </a>
+
+            <a href="contact.html" class="btn btn-outline"> Contact Us </a>
+          </div>
+        </div>
+
+        <div class="hero-scroll">
+          <span>Discover D'View</span>
+          <span class="scroll-line"></span>
+        </div>
+      </section>
+
+      <!-- ================= QUICK BOOKING ================= -->
+      <section class="booking-strip">
+        <div class="container">
+          <form class="booking-form" id="availability-form">
+            <div class="booking-field">
+              <label for="home-checkin">Check-in</label>
+              <input type="date" id="home-checkin" name="checkin" />
+            </div>
+
+            <div class="booking-field">
+              <label for="home-checkout">Check-out</label>
+              <input type="date" id="home-checkout" name="checkout" />
+            </div>
+
+            <div class="booking-field">
+              <label for="home-guests">Guests</label>
+              <select id="home-guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5+ Guests</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Check Availability
             </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= INTRO ================= -->
+      <section class="section intro-section">
+        <div class="container intro-grid">
+          <div class="section-heading text-left">
+            <p class="eyebrow">YOUR HOME AWAY FROM HOME</p>
+
+            <h2>
+              It matters where
+              <span>you stay.</span>
+            </h2>
+          </div>
+
+          <div class="intro-copy">
+            <p>
+              At D'View Royal Resort, we believe a great stay is more than a
+              room. It is about comfort, hospitality, good food, memorable
+              experiences and a place where you can truly relax.
+            </p>
+
+            <p>
+              Whether you are visiting for business, leisure, family time or a
+              special celebration, our resort is designed to make your
+              experience comfortable and enjoyable.
+            </p>
+
+            <a href="contact.html" class="text-link">
+              Discover more about us →
+            </a>
           </div>
         </div>
-        <div class="card amenity-card">
-          <img src="images/IMG-20260409-WA0001.jpg" alt="Game House" />
-          <div class="card-body">
-            <h3>Game House</h3>
-            <p class="card-desc">
-              VR, PS4, Snooker, Hockey, Basketball, Massage, Bouncing Castle &
-              More
+      </section>
+
+      <!-- ================= AMENITIES ================= -->
+      <section class="section section-light">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">RELAX • PLAY • DINE</p>
+
+            <h2>Everything you need for a memorable stay.</h2>
+
+            <p>
+              From refreshing leisure experiences to entertainment and dining,
+              enjoy more during your stay at D'View.
             </p>
+          </div>
+
+          <div class="feature-grid">
+            <!-- POOL -->
+            <article class="feature-card feature-card-large">
+              <div class="feature-media">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="images/pool.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div class="feature-content">
+                <p class="card-kicker">LEISURE</p>
+
+                <h3>Swimming Pool</h3>
+
+                <p>
+                  Take a refreshing swim or enjoy relaxed poolside moments with
+                  family and friends.
+                </p>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20want%20to%20book%20the%20pool%20for%20an%20event."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-link">
+                  Book pool for an event →
+                </a>
+              </div>
+            </article>
+
+            <!-- GAME HOUSE -->
+            <article class="feature-card">
+              <div class="feature-media">
+                <img
+                  src="images/game-house1.jpg"
+                  alt="Guests enjoying the Game House at D'View Royal Resort"
+                  loading="lazy" />
+              </div>
+
+              <div class="feature-content">
+                <p class="card-kicker">ENTERTAINMENT</p>
+
+                <h3>Game House</h3>
+
+                <p>
+                  VR, PlayStation, Snooker, Hockey, Basketball, Massage,
+                  Bouncing Castle and more.
+                </p>
+              </div>
+            </article>
+
+            <!-- RESTAURANT -->
+            <article class="feature-card">
+              <div class="feature-media">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="video.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div class="feature-content">
+                <p class="card-kicker">DINING</p>
+
+                <h3>Restaurant</h3>
+
+                <p>
+                  Enjoy delicious African dishes and convenient dining during
+                  your stay.
+                </p>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20to%20order%20food."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-link">
+                  Order food on WhatsApp →
+                </a>
+              </div>
+            </article>
+
+            <!-- GYM HOUSE -->
+            <article class="feature-card">
+              <div class="feature-media">
+                <img
+                  src="images/"
+                  alt="Guests enjoying the Game House at D'View Royal Resort"
+                  loading="lazy" />
+              </div>
+
+              <div class="feature-content">
+                <p class="card-kicker">EXCERCISE AND FITNESS</p>
+
+                <h3>Gym and Fitness Center</h3>
+
+                <p>
+                  Stay active during your stay with our gym, equipped for
+                  cardio, strength and functional training.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="card amenity-card">
-          <video autoplay muted loop playsinline class="card-media">
-            <source src="video.mp4" type="video/mp4" />
-          </video>
-          <div class="card-body">
-            <h3>Restaurant</h3>
-            <p class="card-desc">
-              Various African dishes. Order food via WhatsApp.
+      </section>
+
+      <!-- ================= ROOMS CTA ================= -->
+      <section class="section rooms-preview">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">STAY YOUR WAY</p>
+
+            <h2>Rooms designed for your comfort.</h2>
+
+            <p>
+              Choose from comfortable rooms, spacious apartments and premium
+              accommodation options.
             </p>
-            <button class="btn-small" onclick="orderFood()">Order Food</button>
           </div>
+
+          <div class="room-preview-grid">
+            <article class="mini-room-card">
+              <img
+                src="images/single1.jpeg"
+                alt="Single Room at D'View Royal Resort"
+                loading="lazy" />
+
+              <div>
+                <h3>Single Room</h3>
+                <p>From ₦40,000 / night</p>
+              </div>
+            </article>
+
+            <article class="mini-room-card">
+              <img
+                src="images/IMG-20260621-WA0017.jpg"
+                alt="1-Bedroom Apartment at D'View Royal Resort"
+                loading="lazy" />
+
+              <div>
+                <h3>1-Bedroom Apartment</h3>
+                <p>From ₦60,000 / night</p>
+              </div>
+            </article>
+
+            <article class="mini-room-card">
+              <video autoplay muted loop playsinline>
+                <source src="penthouse.mp4" type="video/mp4" />
+              </video>
+
+              <div>
+                <h3>2-Bedroom / Penthouse</h3>
+                <p>From ₦120,000 / night</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="center-action">
+            <a href="rooms.html" class="btn btn-primary"> View All Rooms </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCES ================= -->
+      <section class="section section-dark">
+        <div class="container experience-grid">
+          <div class="experience-content">
+            <p class="eyebrow">EXPLORE BEYOND THE RESORT</p>
+
+            <h2>Discover the beauty and history around us.</h2>
+
+            <p>
+              Make your stay an adventure. Explore remarkable destinations and
+              cultural attractions with experiences around Ogun State and
+              beyond.
+            </p>
+
+            <a href="tours.html" class="btn btn-light"> Explore Tours </a>
+          </div>
+
+          <div class="experience-image">
+            <img
+              src="images/olumo rooock.jpeg"
+              alt="Olumo Rock near Abeokuta"
+              loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EVENTS ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">CELEBRATE WITH US</p>
+
+            <h2>Make your special moments memorable.</h2>
+
+            <p>
+              From weddings and celebrations to future event-centre experiences,
+              D'View is ready for your special occasions.
+            </p>
+          </div>
+
+          <div class="center-action">
+            <a href="events.html" class="btn btn-primary"> Explore Events </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FINAL CTA ================= -->
+      <section class="cta-section">
+        <div class="container cta-content">
+          <p class="eyebrow">READY TO EXPERIENCE D'VIEW?</p>
+
+          <h2>Your next memorable stay starts here.</h2>
+
+          <p>
+            Check our accommodation options or speak with our team directly.
+          </p>
+
+          <div class="hero-actions">
+            <a href="rooms.html" class="btn btn-primary"> Book Your Stay </a>
+
+            <a
+              href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline">
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">D</span>
+            <span>
+              <strong>D'View</strong>
+              <small>Royal Resort</small>
+            </span>
+          </a>
+
+          <p>Comfort, hospitality and memorable experiences.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html">Events</a>
+          <a href="tours.html">Tours</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <a href="contact.html">Contact Us</a>
+
+          <a
+            href="https://wa.me/2349169713338"
+            target="_blank"
+            rel="noopener noreferrer">
+            WhatsApp
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Reservations</h3>
+
+          <p>Ready to stay with us?</p>
+
+          <a href="rooms.html" class="footer-book"> Book Your Stay → </a>
         </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <p>&copy; 2026 D'View Royal Resort. All Rights Reserved.</p>
+      <div class="container footer-bottom">
+        <p>© 2026 D'View Royal Resort. All Rights Reserved.</p>
+
+        <p>It Matters Where You Stay.</p>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>

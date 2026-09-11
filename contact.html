@@ -3,33 +3,259 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - D'View Royal Resort</title>
+
+    <title>Contact D'View Royal Resort</title>
+
+    <meta
+      name="description"
+      content="Contact D'View Royal Resort for reservations, accommodation enquiries, events, dining and general information." />
+
+    <meta name="theme-color" content="#12372a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">D'View Royal Resort</h1>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">D</span>
+
+          <span>
+            <strong>D'View</strong>
+            <small>Royal Resort</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="site-nav"
+          aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html">Events</a>
+          <a href="tours.html">Tours</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="rooms.html" class="nav-cta">Book Your Stay</a>
+        </nav>
+      </div>
     </header>
 
-    <section id="contact" class="section alt-bg">
-      <h2>Contact Us</h2>
-      <p>Have questions or want to make a reservation?</p>
-      <a href="https://wa.me/2349169713338" target="_blank" class="btn"
-        >Chat on WhatsApp</a
-      >
-    </section>
+    <main>
+      <!-- HERO -->
+      <section class="page-hero page-hero-contact">
+        <div class="container">
+          <p class="eyebrow">WE'RE HERE TO HELP</p>
 
-    <footer>
-      <p>&copy; 2026 D'View Royal Resort. All Rights Reserved.</p>
+          <h1>Contact D'View Royal Resort</h1>
+
+          <p>
+            Have a question, need help with a reservation or planning an event?
+            Speak with our team.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT OPTIONS -->
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- WHATSAPP -->
+            <article class="contact-card contact-card-primary">
+              <div class="contact-icon">WA</div>
+
+              <p class="card-kicker">FASTEST RESPONSE</p>
+
+              <h2>Chat on WhatsApp</h2>
+
+              <p>
+                Message our team directly for reservations, room enquiries,
+                events, tours and general questions.
+              </p>
+
+              <a
+                href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp">
+                Start WhatsApp Chat
+              </a>
+            </article>
+
+            <!-- RESERVATIONS -->
+            <article class="contact-card">
+              <div class="contact-icon">RES</div>
+
+              <p class="card-kicker">RESERVATIONS</p>
+
+              <h2>Book Your Stay</h2>
+
+              <p>
+                View our accommodation options and start a direct booking
+                request.
+              </p>
+
+              <a href="rooms.html" class="btn btn-primary"> View Rooms </a>
+            </article>
+
+            <!-- EVENTS -->
+            <article class="contact-card">
+              <div class="contact-icon">EVT</div>
+
+              <p class="card-kicker">EVENTS</p>
+
+              <h2>Plan an Event</h2>
+
+              <p>
+                Speak with us about weddings, celebrations, corporate gatherings
+                and other occasions.
+              </p>
+
+              <a href="events.html" class="btn btn-primary"> Explore Events </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT DETAILS -->
+      <section class="section section-light">
+        <div class="container contact-details-grid">
+          <div>
+            <p class="eyebrow">D'VIEW ROYAL RESORT</p>
+
+            <h2>Let's make your stay memorable.</h2>
+
+            <p>
+              Whether you are looking for accommodation, planning an event,
+              ordering food or exploring nearby attractions, our team is ready
+              to assist.
+            </p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="detail-label"> WhatsApp </span>
+
+              <a
+                href="https://wa.me/2349169713338"
+                target="_blank"
+                rel="noopener noreferrer">
+                +234 916 971 3338
+              </a>
+            </div>
+
+            <div class="contact-detail">
+              <span class="detail-label"> Reservations </span>
+
+              <a href="rooms.html"> View accommodation </a>
+            </div>
+
+            <div class="contact-detail">
+              <span class="detail-label"> Events </span>
+
+              <a href="events.html"> Event enquiries </a>
+            </div>
+
+            <div class="contact-detail">
+              <span class="detail-label"> Tours </span>
+
+              <a href="tours.html"> Explore destinations </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="cta-section">
+        <div class="container cta-content">
+          <p class="eyebrow">NEED ASSISTANCE?</p>
+
+          <h2>We'd be happy to hear from you.</h2>
+
+          <p>
+            Send us a message and our team will assist you with your request.
+          </p>
+
+          <a
+            href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20need%20assistance."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary">
+            Chat With Us
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">D</span>
+
+            <span>
+              <strong>D'View</strong>
+              <small>Royal Resort</small>
+            </span>
+          </a>
+
+          <p>Comfort, hospitality and memorable experiences.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html">Events</a>
+          <a href="tours.html">Tours</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Reservations</h3>
+
+          <a href="rooms.html">Book Your Stay</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>WhatsApp</h3>
+
+          <a
+            href="https://wa.me/2349169713338"
+            target="_blank"
+            rel="noopener noreferrer">
+            +234 916 971 3338
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 D'View Royal Resort. All Rights Reserved.</p>
+
+        <p>It Matters Where You Stay.</p>
+      </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

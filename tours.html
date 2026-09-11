@@ -3,111 +3,407 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tours - D'View Royal Resort</title>
+
+    <title>Tours & Experiences | D'View Royal Resort</title>
+
+    <meta
+      name="description"
+      content="Explore historical, cultural and adventure destinations with D'View Royal Resort." />
+
+    <meta name="theme-color" content="#12372a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">D'View Royal Resort</h1>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">D</span>
+
+          <span>
+            <strong>D'View</strong>
+            <small>Royal Resort</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="site-nav"
+          aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html">Events</a>
+          <a href="tours.html" class="active">Tours</a>
+          <a href="contact.html">Contact</a>
+          <a href="rooms.html" class="nav-cta">Book Your Stay</a>
+        </nav>
+      </div>
     </header>
 
-    <section id="tours" class="section">
-      <h2>Explore Ogun State With Us</h2>
-      <div class="grid">
-        <div class="card gallery-card">
-          <div class="slider">
-            <div class="slides">
-              <img src="images/Obsanjo 1.jpeg" alt="oba-lib 1" /><img
-                src="images/Obasanjo 2.jpeg"
-                alt="oba-lib 2" /><img
-                src="images/Oba-lib seat .jpeg"
-                alt="Library 1" /><img
-                src="images/Oba-lib seat.jpeg"
-                alt="seating" /><img
-                src="images/oba-lib 21.jpeg"
-                alt="Library 5" /><img
-                src="images/Opon obalib.jpeg"
-                alt="games" /><img
-                src="images/IMG_8886.JPG"
-                alt="Library 2" /><img
-                src="images/IMG_8940.JPG"
-                alt="Library 3" /><img
-                src="images/IMG_8957.JPG"
-                alt="Library 4" />
-            </div>
-            <button class="prev" onclick="moveSlide(this, -1)">❮</button
-            ><button class="next" onclick="moveSlide(this, 1)">❯</button>
-          </div>
-          <h3>Obasanjo Presidential Library</h3>
-          <p class="card-desc">
-            Historical tour, museum, and serene environment.
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero page-hero-tours">
+        <div class="container">
+          <p class="eyebrow">EXPLORE • DISCOVER • EXPERIENCE</p>
+
+          <h1>Explore Ogun State With Us</h1>
+
+          <p>
+            Discover history, culture, adventure and remarkable destinations
+            during your stay at D'View Royal Resort.
           </p>
         </div>
-        <div class="card gallery-card">
-          <div class="slider">
-            <div class="slides">
-              <img src="images/badary 1.jpeg" alt="badagry 1" /><img
-                src="images/badagry 2.jpeg"
-                alt="badagry 2" /><img
-                src="images/badagry water 1.jpeg"
-                alt="badagrywater" /><video autoplay muted loop playsinline>
-                <source
-                  src="images/VID-20260811-WA0039.mp4"
-                  type="video/mp4" /></video
-              ><video autoplay muted loop playsinline>
-                <source
-                  src="images/VID-20260811-WA0040.mp4"
-                  type="video/mp4" /></video
-              ><video autoplay muted loop playsinline>
-                <source
-                  src="images/VID-20260811-WA0041.mp4"
-                  type="video/mp4" /></video
-              ><video autoplay muted loop playsinline>
-                <source src="images/VID-20260811-WA0042.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <button class="prev" onclick="moveSlide(this, -1)">❮</button
-            ><button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </section>
+
+      <!-- INTRO -->
+      <section class="section">
+        <div class="container narrow-content">
+          <div class="section-heading">
+            <p class="eyebrow">LOCAL EXPERIENCES</p>
+
+            <h2>Turn your stay into an adventure.</h2>
+
+            <p>
+              Ask our team about visiting nearby attractions and planning your
+              experience.
+            </p>
           </div>
-          <h3>Badagry Slave Port</h3>
-          <p class="card-desc">
-            Cultural and historical experience by the beach.
-          </p>
         </div>
-        <div class="card gallery-card">
-          <div class="slider">
-            <div class="slides">
-              <img src="images/olumo rooock.jpeg" alt="olurock 1" /><img
-                src="images/IMG-20260811-WA0071.jpg"
-                alt="olurock 2" /><video autoplay muted loop playsinline>
-                <source src="images/olumo1.mp4" type="video/mp4" /></video
-              ><video autoplay muted loop playsinline>
-                <source src="images/olumo2.mp4" type="video/mp4" /></video
-              ><img src="images/olumo3.jpg" alt="Olumo Rock 3" />
-            </div>
-            <button class="prev" onclick="moveSlide(this, -1)">❮</button
-            ><button class="next" onclick="moveSlide(this, 1)">❯</button>
+      </section>
+
+      <!-- TOURS -->
+      <section class="section section-light">
+        <div class="container">
+          <div class="experience-card-grid">
+            <!-- OBASANJO -->
+            <article class="experience-card">
+              <div class="experience-gallery">
+                <div class="slides">
+                  <img
+                    src="images/Obsanjo 1.jpeg"
+                    alt="Obasanjo Presidential Library"
+                    loading="lazy" />
+
+                  <img
+                    src="images/Obasanjo 2.jpeg"
+                    alt="Obasanjo Presidential Library grounds"
+                    loading="lazy" />
+
+                  <img
+                    src="images/Oba-lib seat .jpeg"
+                    alt="Library interior"
+                    loading="lazy" />
+
+                  <img
+                    src="images/Oba-lib seat.jpeg"
+                    alt="Library seating area"
+                    loading="lazy" />
+
+                  <img
+                    src="images/oba-lib 21.jpeg"
+                    alt="Obasanjo Presidential Library"
+                    loading="lazy" />
+
+                  <img
+                    src="images/Opon obalib.jpeg"
+                    alt="Recreation area"
+                    loading="lazy" />
+
+                  <img
+                    src="images/IMG_8886.JPG"
+                    alt="Library attraction"
+                    loading="lazy" />
+
+                  <img
+                    src="images/IMG_8940.JPG"
+                    alt="Library attraction"
+                    loading="lazy" />
+
+                  <img
+                    src="images/IMG_8957.JPG"
+                    alt="Library attraction"
+                    loading="lazy" />
+                </div>
+
+                <button
+                  type="button"
+                  class="gallery-prev"
+                  aria-label="Previous Obasanjo Presidential Library image"
+                  data-gallery-prev>
+                  ‹
+                </button>
+
+                <button
+                  type="button"
+                  class="gallery-next"
+                  aria-label="Next Obasanjo Presidential Library image"
+                  data-gallery-next>
+                  ›
+                </button>
+              </div>
+
+              <div class="experience-card-content">
+                <p class="card-kicker">HISTORY & CULTURE</p>
+
+                <h2>Obasanjo Presidential Library</h2>
+
+                <p>
+                  Explore history, museum exhibits and a serene environment at
+                  one of Abeokuta's notable attractions.
+                </p>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20information%20about%20a%20tour%20to%20the%20Obasanjo%20Presidential%20Library."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  Enquire About Tour
+                </a>
+              </div>
+            </article>
+
+            <!-- BADAGRY -->
+            <article class="experience-card">
+              <div class="experience-gallery">
+                <div class="slides">
+                  <img
+                    src="images/badary 1.jpeg"
+                    alt="Badagry historical attraction"
+                    loading="lazy" />
+
+                  <img
+                    src="images/badagry 2.jpeg"
+                    alt="Badagry historical site"
+                    loading="lazy" />
+
+                  <img
+                    src="images/badagry water 1.jpeg"
+                    alt="Badagry waterfront"
+                    loading="lazy" />
+
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source
+                      src="images/VID-20260811-WA0039.mp4"
+                      type="video/mp4" />
+                  </video>
+
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source
+                      src="images/VID-20260811-WA0040.mp4"
+                      type="video/mp4" />
+                  </video>
+
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source
+                      src="images/VID-20260811-WA0041.mp4"
+                      type="video/mp4" />
+                  </video>
+
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source
+                      src="images/VID-20260811-WA0042.mp4"
+                      type="video/mp4" />
+                  </video>
+                </div>
+
+                <button
+                  type="button"
+                  class="gallery-prev"
+                  aria-label="Previous Badagry image"
+                  data-gallery-prev>
+                  ‹
+                </button>
+
+                <button
+                  type="button"
+                  class="gallery-next"
+                  aria-label="Next Badagry image"
+                  data-gallery-next>
+                  ›
+                </button>
+              </div>
+
+              <div class="experience-card-content">
+                <p class="card-kicker">HISTORY & CULTURE</p>
+
+                <h2>Badagry Historical Experience</h2>
+
+                <p>
+                  Discover important cultural and historical landmarks and
+                  experience the atmosphere of this historic coastal
+                  destination.
+                </p>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20information%20about%20a%20Badagry tour."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  Enquire About Tour
+                </a>
+              </div>
+            </article>
+
+            <!-- OLUMO -->
+            <article class="experience-card">
+              <div class="experience-gallery">
+                <div class="slides">
+                  <img
+                    src="images/olumo rooock.jpeg"
+                    alt="Olumo Rock"
+                    loading="lazy" />
+
+                  <img
+                    src="images/IMG-20260811-WA0071.jpg"
+                    alt="Olumo Rock landscape"
+                    loading="lazy" />
+
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source src="images/olumo1.mp4" type="video/mp4" />
+                  </video>
+
+                  <video autoplay muted loop playsinline preload="metadata">
+                    <source src="images/olumo2.mp4" type="video/mp4" />
+                  </video>
+
+                  <img
+                    src="images/olumo3.jpg"
+                    alt="Olumo Rock attraction"
+                    loading="lazy" />
+                </div>
+
+                <button
+                  type="button"
+                  class="gallery-prev"
+                  aria-label="Previous Olumo Rock image"
+                  data-gallery-prev>
+                  ‹
+                </button>
+
+                <button
+                  type="button"
+                  class="gallery-next"
+                  aria-label="Next Olumo Rock image"
+                  data-gallery-next>
+                  ›
+                </button>
+              </div>
+
+              <div class="experience-card-content">
+                <p class="card-kicker">ADVENTURE</p>
+
+                <h2>Olumo Rock</h2>
+
+                <p>
+                  Climb the legendary rock in Abeokuta and experience adventure,
+                  history and impressive views.
+                </p>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20information%20about%20an%20Olumo%20Rock tour."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  Enquire About Tour
+                </a>
+              </div>
+            </article>
           </div>
-          <h3>Olumo Rock</h3>
-          <p class="card-desc">
-            Climb the legendary rock in Abeokuta. Adventure, history, and
-            amazing views.
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="container cta-content">
+          <p class="eyebrow">PLAN YOUR EXPERIENCE</p>
+
+          <h2>Want help planning your tour?</h2>
+
+          <p>
+            Contact our team and tell us which destination you would like to
+            explore.
           </p>
+
+          <a
+            href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20help%20planning%20a%20tour."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary">
+            Plan My Tour
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">D</span>
+
+            <span>
+              <strong>D'View</strong>
+              <small>Royal Resort</small>
+            </span>
+          </a>
+
+          <p>Comfort, hospitality and memorable experiences.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html">Events</a>
+          <a href="tours.html">Tours</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Reservations</h3>
+
+          <a href="rooms.html">Book Your Stay</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>WhatsApp</h3>
+
+          <a
+            href="https://wa.me/2349169713338"
+            target="_blank"
+            rel="noopener noreferrer">
+            Chat with us
+          </a>
         </div>
       </div>
-    </section>
 
-    <footer>
-      <p>&copy; 2026 D'View Royal Resort. All Rights Reserved.</p>
+      <div class="container footer-bottom">
+        <p>© 2026 D'View Royal Resort. All Rights Reserved.</p>
+
+        <p>It Matters Where You Stay.</p>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>

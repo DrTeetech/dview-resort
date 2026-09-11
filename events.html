@@ -3,83 +3,285 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events - D'View Royal Resort</title>
+
+    <title>Events & Celebrations | D'View Royal Resort</title>
+
+    <meta
+      name="description"
+      content="Host weddings, celebrations and special events at D'View Royal Resort." />
+
+    <meta name="theme-color" content="#12372a" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">D'View Royal Resort</h1>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">D</span>
+
+          <span>
+            <strong>D'View</strong>
+            <small>Royal Resort</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          class="site-nav"
+          aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html" class="active">Events</a>
+          <a href="tours.html">Tours</a>
+          <a href="contact.html">Contact</a>
+          <a href="rooms.html" class="nav-cta">Book Your Stay</a>
+        </nav>
+      </div>
     </header>
 
-    <section id="events" class="section alt-bg">
-      <h2>Host Your Event With Us</h2>
-      <p class="section-subtitle">
-        Perfect venue for your special moments + Giving back to community
-      </p>
-      <div class="grid">
-        <div class="card upcoming-card">
-          <div class="coming-soon-badge">COMING SOON</div>
-          <video autoplay muted loop playsinline class="card-media">
-            <source src="construction.mp4" type="video/mp4" />
-          </video>
-          <h3>Grand Event Center</h3>
-          <p class="card-desc">
-            State-of-the-art event hall for Weddings, Burials, Conferences.
-            Under Construction.
+    <main>
+      <!-- HERO -->
+      <section class="page-hero page-hero-events">
+        <div class="container">
+          <p class="eyebrow">CELEBRATE WITH US</p>
+
+          <h1>Events & Celebrations</h1>
+
+          <p>
+            Create meaningful memories in a comfortable and welcoming
+            environment.
           </p>
-          <button class="btn" onclick="bookEvent('Grand Event Center')">
-            Get Notified
-          </button>
         </div>
-        <div class="card foundation-card">
-          <video autoplay muted loop playsinline class="card-media">
-            <source src="foundation.mp4" type="video/mp4" />
-          </video>
-          <h3>OLU Foundation & Community Service</h3>
-          <p class="card-desc">
-            Giving back is part of who we are. Through the
-            <b>OLU Foundation</b> run by our Chairman, we support the community.
-          </p>
-          <ul class="foundation-list">
-            <li>
-              📚 <b>Education Support:</b> Free books and school materials
-            </li>
-            <li>♿ <b>Disability Support:</b> Wheelchairs and aids</li>
-            <li>🤝 <b>Community Outreach:</b> Helping the needy</li>
-          </ul>
-          <button
-            class="btn foundation-btn"
-            onclick="bookEvent('OLU Foundation Donation')">
-            Partner / Donate
-          </button>
+      </section>
+
+      <!-- EVENTS -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">YOUR OCCASION, OUR SPACE</p>
+
+            <h2>Make your special moments memorable.</h2>
+
+            <p>
+              From celebrations to future large-scale events, speak with our
+              team about your requirements.
+            </p>
+          </div>
+
+          <div class="event-grid">
+            <!-- GRAND EVENT CENTER -->
+            <article class="event-card">
+              <div class="event-media">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="construction.mp4" type="video/mp4" />
+                </video>
+
+                <span class="event-status"> Coming Soon </span>
+              </div>
+
+              <div class="event-content">
+                <p class="card-kicker">FUTURE VENUE</p>
+
+                <h2>Grand Event Center</h2>
+
+                <p>
+                  A state-of-the-art event hall planned for weddings,
+                  conferences, burials and other important occasions.
+                </p>
+
+                <p class="event-note">Currently under construction.</p>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20to%20be%20notified%20when%20the%20Grand%20Event%20Center%20opens."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  Get Notified
+                </a>
+              </div>
+            </article>
+
+            <!-- WEDDINGS -->
+            <article class="event-card event-card-featured">
+              <div class="event-media">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="wedding.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div class="event-content">
+                <p class="card-kicker">CELEBRATIONS</p>
+
+                <h2>Weddings & Indoor Celebrations</h2>
+
+                <p>
+                  Elegant spaces for weddings, birthdays, anniversaries,
+                  corporate gatherings and private celebrations.
+                </p>
+
+                <ul class="event-list">
+                  <li>Weddings</li>
+                  <li>Birthdays</li>
+                  <li>Anniversaries</li>
+                  <li>Corporate Events</li>
+                </ul>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20to%20book%20a%20hall%20for%20an%20event."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  Enquire About Hall
+                </a>
+              </div>
+            </article>
+
+            <!-- FOUNDATION -->
+            <article class="event-card foundation-event-card">
+              <div class="event-media">
+                <video autoplay muted loop playsinline preload="metadata">
+                  <source src="foundation.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div class="event-content">
+                <p class="card-kicker">COMMUNITY IMPACT</p>
+
+                <h2>OLU Foundation & Community Service</h2>
+
+                <p>
+                  Giving back is part of who we are. Through the
+                  <strong>OLU Foundation</strong>, we support members of the
+                  community.
+                </p>
+
+                <ul class="event-list">
+                  <li>
+                    <strong>Education Support</strong>
+                    <span> Books and school materials. </span>
+                  </li>
+
+                  <li>
+                    <strong>Disability Support</strong>
+                    <span> Wheelchairs and other aids. </span>
+                  </li>
+
+                  <li>
+                    <strong>Community Outreach</strong>
+                    <span> Supporting people in need. </span>
+                  </li>
+                </ul>
+
+                <a
+                  href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20to%20partner%20with%20or%20support%20the%20OLU%20Foundation."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  Partner / Donate
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="card">
-          <video autoplay muted loop playsinline class="card-media">
-            <source src="wedding.mp4" type="video/mp4" />
-          </video>
-          <h3>Weddings & Indoor Celebrations</h3>
-          <p class="card-desc">
-            Elegant indoor halls for Weddings, Birthdays, Anniversaries and
-            Corporate Events.
-          </p>
-          <button class="btn" onclick="bookEvent('Wedding Hall')">
-            Book Hall
-          </button>
+      </section>
+
+      <!-- EVENT ENQUIRY -->
+      <section class="section section-light">
+        <div class="container">
+          <div class="info-panel">
+            <div>
+              <p class="eyebrow">PLAN YOUR EVENT</p>
+
+              <h2>Tell us what you are planning.</h2>
+
+              <p>
+                Contact our team with your event type, preferred date, expected
+                number of guests and requirements.
+              </p>
+            </div>
+
+            <a
+              href="https://wa.me/2349169713338?text=Hi%20DView%20Royal%20Resort%2C%20I%20would%20like%20to%20make%20an%20event%20enquiry."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp">
+              Make an Enquiry
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-mark">D</span>
+
+            <span>
+              <strong>D'View</strong>
+              <small>Royal Resort</small>
+            </span>
+          </a>
+
+          <p>Comfort, hospitality and memorable experiences.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="events.html">Events</a>
+          <a href="tours.html">Tours</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Reservations</h3>
+
+          <a href="rooms.html">Book Your Stay</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>WhatsApp</h3>
+
+          <a
+            href="https://wa.me/2349169713338"
+            target="_blank"
+            rel="noopener noreferrer">
+            Chat with us
+          </a>
         </div>
       </div>
-    </section>
 
-    <footer>
-      <p>&copy; 2026 D'View Royal Resort. All Rights Reserved.</p>
+      <div class="container footer-bottom">
+        <p>© 2026 D'View Royal Resort. All Rights Reserved.</p>
+
+        <p>It Matters Where You Stay.</p>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
